@@ -17,7 +17,7 @@ Caroline https://github.com/carolinetcooper6/Group-Project-1
 
 **Problem Description:** 
 
-Pretend you are the owner/operator of an emergency healthcare clinic needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client 
+Pretend you are the owner/operator of an emergency healthcare clinic needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client.
 
 **Data Model:**
 ![Screenshot 2024-04-02 at 3 40 36 PM](https://github.com/hubahakhtar/Project1/assets/165077668/cca0a26c-7349-4f21-bff1-ab18a6f6f94c)
