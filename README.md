@@ -1,9 +1,7 @@
 # Project 1
-**Group Project #1**
+**Group 1:**
 
-Group 1:
-
-<u>Group Members:</u>
+**Team Members:**
 
 Hubah https://github.com/hubahakhtar/Project1
 
@@ -15,17 +13,17 @@ Charlie https://github.com/charles8888/Project-1
     
 Caroline https://github.com/carolinetcooper6/Group-Project-1
 
-**Problem Description:** 
+# **Problem Description:** 
 
 Pretend you are the owner/operator of an emergency healthcare clinic needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client.
 
-**Data Model:**
+# **Data Model:**
 ![Screenshot 2024-04-02 at 3 40 36 PM](https://github.com/hubahakhtar/Project1/assets/165077668/cca0a26c-7349-4f21-bff1-ab18a6f6f94c)
 
-**Queries:**  
-4 Simple Queries: 
+# **Queries:**  
+**4 Simple Queries:**
 
-#1: Select the name and DOB for all patients born in 1999 
+**#1:** Select the name and DOB for all patients born in 1999 
 
     SELECT patient_Name, `date of birth`,
 
@@ -35,7 +33,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![1](https://github.com/hubahakhtar/Project1/assets/165077668/bb473a78-456e-47cf-ac8d-ed110a5341c4)
 
-#2: Show the name of patient and show their invoice number and amount due
+**#2:** Show the name of patient and show their invoice number and amount due
 
     SELECT patient_Name, Invoice_InvoiceNum, Charge 
 
@@ -45,7 +43,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![2](https://github.com/hubahakhtar/Project1/assets/165077668/2ce5134b-c8f8-481d-8e20-840618bc81cc)
 
-#3: Display all existing appointments along with the date and name of patient 
+**#3:** Display all existing appointments along with the date and name of patient 
 
     SELECT patient_Name, appointmentID, Date 
 
@@ -55,7 +53,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![3](https://github.com/hubahakhtar/Project1/assets/165077668/5435a87d-265e-43a0-84f9-0c0f9c549cf0)
 
-#4: Display all appointments for a particular staff member 
+**#4:** Display all appointments for a particular staff member 
 
     SELECT staffID, staffName, staff_schedule,appointmentID, Date 
 
@@ -67,9 +65,9 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![4](https://github.com/hubahakhtar/Project1/assets/165077668/52d3c67d-29c8-4a90-a7d0-e308e25940e9)
 
-6 Complex Queries:
+**6 Complex Queries:**
 
-#1: Display the patient name, DOB, and their review number and review description 
+**#1:** Display the patient name, DOB, and their review number and review description 
 
     SELECT p.`date of birth`,p.patient_Name, r.reviewNum, r.Desc 
 
@@ -79,7 +77,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![5](https://github.com/hubahakhtar/Project1/assets/165077668/e1814a73-9007-4beb-8b34-25014447ca80)
 
-#2: Find all appointments scheduled for 2027-10-21 along with the patient's name and the staff assigned to each appointment. 
+**#2:** Find all appointments scheduled for 2027-10-21 along with the patient's name and the staff assigned to each appointment. 
 
     SELECT a.appointmentID, a.Date, p.patient_Name, s.staffName 
 
@@ -93,7 +91,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![6](https://github.com/hubahakhtar/Project1/assets/165077668/fdc516e6-d26e-4093-9721-e05780ca2306)
 
-#3: Evaluate staff performance based on the number of appointments attended and the corresponding average patient reviews. 
+**#3:** Evaluate staff performance based on the number of appointments attended and the corresponding average patient reviews. 
 
     SELECT s.staffID, s.staffName,   
 
@@ -115,7 +113,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![7](https://github.com/hubahakhtar/Project1/assets/165077668/02ba5172-c277-42b4-9e0c-ccd445956918)
 
-#4: Retrieve all appointments scheduled for Cesaro Troake along with their emergency contact details.  
+**#4:** Retrieve all appointments scheduled for Cesaro Troake along with their emergency contact details.  
 
     SELECT a.appointmentID, a.Date, e.EC_Phone, e.EC_Address, p.patient_Name 
 
@@ -129,7 +127,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![8](https://github.com/hubahakhtar/Project1/assets/165077668/aa3c5e07-20ca-41f5-83c0-7242a6e5ec6c)
 
-#5: Determine the average number of appointments per staff member over a given period, and display those exceeding the average in descending order 
+**#5:** Determine the average number of appointments per staff member over a given period, and display those exceeding the average in descending order 
 
     SELECT Staff.staffID, Staff.staffName,
 
@@ -162,7 +160,7 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 ![9](https://github.com/hubahakhtar/Project1/assets/165077668/086bc7ac-8f6d-4858-b99b-e089cfac65ee)
 
-#6 Identify patients with the largest balance due on their invoices with a balance exceeding $10,000. Order the balances due in descending order and display the total average balance due. 
+**#6** Identify patients with the largest balance due on their invoices with a balance exceeding $10,000. Order the balances due in descending order and display the total average balance due. 
 
     SELECT p.patientID, p.patient_Name, i.InvoiceNum, 
 
@@ -185,10 +183,10 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 ![10](https://github.com/hubahakhtar/Project1/assets/165077668/e8b18ca6-3ca4-4f25-92bb-67f723a93190)
 
 
-**Generated Data (Mockaroo):**
+# **Generated Data (Mockaroo):**
 https://mockaroo.com/7daabbb0 
 
-**Data Dictionary:**
+# **Data Dictionary:**
 ![a](https://github.com/hubahakhtar/Project1/assets/165077668/7a64e8b4-8c83-4592-a511-4bac269b6c31)
 ![b](https://github.com/hubahakhtar/Project1/assets/165077668/1b405496-527a-477e-8618-04d4744fc516)
 ![c](https://github.com/hubahakhtar/Project1/assets/165077668/aa4b585e-9538-4532-89a4-5c052cf010a2)
