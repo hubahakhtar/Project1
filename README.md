@@ -3,7 +3,7 @@
 
 **Group 1:**
 
-**Group Members: **
+**Group Members:**
 
 Hubah https://github.com/hubahakhtar/Project1
 
