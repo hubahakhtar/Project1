@@ -193,7 +193,7 @@ https://mockaroo.com/7daabbb0
 ![a](https://github.com/hubahakhtar/Project1/assets/165077668/7a64e8b4-8c83-4592-a511-4bac269b6c31)
 ![b](https://github.com/hubahakhtar/Project1/assets/165077668/1b405496-527a-477e-8618-04d4744fc516)
 ![c](https://github.com/hubahakhtar/Project1/assets/165077668/aa4b585e-9538-4532-89a4-5c052cf010a2)
-![d](https://github.com/hubahakhtar/Project1/assets/165077668/1f55c577-944f-4063-89f5-f57b7fa2ead9)
+![d](https://github.com/hubahakhtar/Project1/assets/165077668/8466fb3d-078f-4500-a830-8e3604799da5)
 ![e](https://github.com/hubahakhtar/Project1/assets/165077668/cad393a8-ac0a-4c28-b77c-e9e023e06daf)
 ![f](https://github.com/hubahakhtar/Project1/assets/165077668/4c01d12e-b669-4fb5-8635-91ae9af622eb)
 ![g](https://github.com/hubahakhtar/Project1/assets/165077668/f5076d99-9b9f-4ede-9623-a4a82f12706e)
