@@ -1,9 +1,9 @@
 # Project 1
 **Group Project #1**
 
-**Group 1:**
+Group 1:
 
-**Group Members:**
+<u>Group Members:</u>
 
 Hubah https://github.com/hubahakhtar/Project1
 
