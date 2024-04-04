@@ -1,19 +1,19 @@
 # Project 1
-Group Project #1
+**Group Project #1**
 
-Group 1:  
+**Group 1:**
 
 Group Members: 
 
--Hubah https://github.com/hubahakhtar/Project1
+Hubah https://github.com/hubahakhtar/Project1
 
--Gwen https://github.com/gaw63800/GroupProjectMIST4610-Group1
+Gwen https://github.com/gaw63800/GroupProjectMIST4610-Group1
 
--Krishen https://github.com/supersomeone03/Project-1
+Krishen https://github.com/supersomeone03/Project-1
 
--Charlie https://github.com/charles8888/Project-1
+Charlie https://github.com/charles8888/Project-1
     
--Caroline https://github.com/carolinetcooper6/Group-Project-1
+Caroline https://github.com/carolinetcooper6/Group-Project-1
 
 **Problem Description:** 
 
