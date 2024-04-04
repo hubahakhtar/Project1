@@ -27,43 +27,43 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 
 #1: Select the name and DOB for all patients born in 1999 
 
-SELECT patient_Name, `date of birth`,
+    SELECT patient_Name, `date of birth`,
 
-FROM patient
+    FROM patient
 
-WHERE `date of birth` regexp "1999";
+    WHERE `date of birth` regexp "1999";
 
 ![1](https://github.com/hubahakhtar/Project1/assets/165077668/bb473a78-456e-47cf-ac8d-ed110a5341c4)
 
 #2: Show the name of patient and show their invoice number and amount due
 
-SELECT patient_Name, Invoice_InvoiceNum, Charge 
+    SELECT patient_Name, Invoice_InvoiceNum, Charge 
 
-FROM patient 
+    FROM patient 
 
-JOIN patient_has_Invoice ON patient_has_Invoice.patient_patientID = patient.patientID; 
+    JOIN patient_has_Invoice ON patient_has_Invoice.patient_patientID = patient.patientID; 
 
 ![2](https://github.com/hubahakhtar/Project1/assets/165077668/2ce5134b-c8f8-481d-8e20-840618bc81cc)
 
 #3: Display all existing appointments along with the date and name of patient 
 
-SELECT patient_Name, appointmentID, Date 
+    SELECT patient_Name, appointmentID, Date 
 
-FROM patient 
+    FROM patient 
 
-JOIN Appointment ON Appointment.patient_patientID= patient.patientID; 
+    JOIN Appointment ON Appointment.patient_patientID= patient.patientID; 
 
 ![3](https://github.com/hubahakhtar/Project1/assets/165077668/5435a87d-265e-43a0-84f9-0c0f9c549cf0)
 
 #4: Display all appointments for a particular staff member 
 
-SELECT staffID, staffName, staff_schedule,appointmentID, Date 
+    SELECT staffID, staffName, staff_schedule,appointmentID, Date 
 
-FROM Staff 
+    FROM Staff 
 
-JOIN Appointment ON Appointment.Staff_staffID = Staff.staffID 
+    JOIN Appointment ON Appointment.Staff_staffID = Staff.staffID 
 
-WHERE staffID = "1552"; 
+    WHERE staffID = "1552"; 
 
 ![4](https://github.com/hubahakhtar/Project1/assets/165077668/52d3c67d-29c8-4a90-a7d0-e308e25940e9)
 
@@ -71,68 +71,119 @@ WHERE staffID = "1552";
 
 #1: Display the patient name, DOB, and their review number and review description 
 
-SELECT p.`date of birth`,p.patient_Name, r.reviewNum, r.Desc 
+    SELECT p.`date of birth`,p.patient_Name, r.reviewNum, r.Desc 
 
-FROM patient p 
+    FROM patient p 
 
-JOIN Review r ON p.patientID = r.patient_patientID; 
+    JOIN Review r ON p.patientID = r.patient_patientID; 
 
 ![5](https://github.com/hubahakhtar/Project1/assets/165077668/e1814a73-9007-4beb-8b34-25014447ca80)
 
 #2: Find all appointments scheduled for 2027-10-21 along with the patient's name and the staff assigned to each appointment. 
 
-SELECT a.appointmentID, a.Date, p.patient_Name, s.staffName 
+    SELECT a.appointmentID, a.Date, p.patient_Name, s.staffName 
 
-FROM Appointment a 
+    FROM Appointment a 
 
-JOIN patient p ON a.patient_patientID = p.patientID
+    JOIN patient p ON a.patient_patientID = p.patientID
 
-JOIN Staff s ON a.Staff_staffID = s.staffID 
+    JOIN Staff s ON a.Staff_staffID = s.staffID 
 
-WHERE DATE(a.Date) ='2027-10-21'; 
+    WHERE DATE(a.Date) ='2027-10-21'; 
 
 ![6](https://github.com/hubahakhtar/Project1/assets/165077668/fdc516e6-d26e-4093-9721-e05780ca2306)
 
 #3: Evaluate staff performance based on the number of appointments attended and the corresponding average patient reviews. 
 
-SELECT s.staffID, s.staffName,   
+    SELECT s.staffID, s.staffName,   
 
-COUNT(a.appointmentID) AS num_appointments_attended,  
+    COUNT(a.appointmentID) AS num_appointments_attended,  
 
-AVG(r.Rating) AS average_review_rating 
+    AVG(r.Rating) AS average_review_rating 
 
-FROM Staff s 
+    FROM Staff s 
 
-JOIN Appointment a ON s.staffID = a.Staff_staffID 
+    JOIN Appointment a ON s.staffID = a.Staff_staffID 
 
-JOIN Procedures pr ON a.appointmentID = pr.Appointment_appointmentID 
+    JOIN Procedures pr ON a.appointmentID = pr.Appointment_appointmentID 
 
-JOIN patient p ON p.patientID = a.patient_patientID 
+    JOIN patient p ON p.patientID = a.patient_patientID 
 
-JOIN Review r ON r.patient_patientID = p.patientID 
-
-GROUP BY s.StaffID, s.StaffName; 
+    JOIN Review r ON r.patient_patientID = p.patientID 
+  
+    GROUP BY s.StaffID, s.StaffName; 
 
 ![7](https://github.com/hubahakhtar/Project1/assets/165077668/02ba5172-c277-42b4-9e0c-ccd445956918)
 
 #4: Retrieve all appointments scheduled for Cesaro Troake along with their emergency contact details.  
 
-SELECT a.appointmentID, a.Date, e.EC_Phone, e.EC_Address, p.patient_Name 
+    SELECT a.appointmentID, a.Date, e.EC_Phone, e.EC_Address, p.patient_Name 
 
-FROM Appointment a 
+    FROM Appointment a 
 
-JOIN patient p ON a.patient_patientID = p.patientID 
+    JOIN patient p ON a.patient_patientID = p.patientID 
 
-JOIN Emergency_Contact e ON p.patientID = e.patient_patientID 
+    JOIN Emergency_Contact e ON p.patientID = e.patient_patientID 
 
-WHERE p.patient_Name = 'Cesaro Troake'; 
+    WHERE p.patient_Name = 'Cesaro Troake'; 
 
 ![8](https://github.com/hubahakhtar/Project1/assets/165077668/aa3c5e07-20ca-41f5-83c0-7242a6e5ec6c)
 
-#5: Aggregate billing information from the Invoice table with patient insurance details from the patient table. Determine the average charge per service and how much is covered by insurance 
+#5: Determine the average number of appointments per staff member over a given period, and display those exceeding the average in descending order 
 
+    SELECT Staff.staffID, Staff.staffName,
 
-#6: Identify times of peak resource usage by joining Appointment, Rooms, Procedures, and Equipment tables. Evaluate if certain equipment is overbooked or underutilized. 
+    COUNT(Appointment.appointmentID) AS NumberOfAppointments 
+
+    FROM Staff 
+
+    JOIN Appointment ON Staff.staffID = Appointment.Staff_staffID 
+
+    WHERE Appointment.Date BETWEEN '2025-08-25' AND '2027-11-03' 
+
+    GROUP BY Staff.staffID, Staff.staffName 
+
+    HAVING
+    COUNT(Appointment.appointmentID) > ( 
+
+    SELECT (AVG(AppointmentCounts.NumberOfAppointments) - 0.1) -- Slight adjustment for precision 
+    FROM ( 
+    SELECT COUNT(Appointment.appointmentID) AS NumberOfAppointments 
+
+    FROM Appointment 
+
+    WHERE Appointment.Date BETWEEN '2025-08-25' AND '2027-11-03' 
+
+    GROUP BY Appointment.Staff_staffID 
+    ) AS AppointmentCounts 
+    ) 
+
+    ORDER BY NumberOfAppointments DESC; 
+
+![9](https://github.com/hubahakhtar/Project1/assets/165077668/086bc7ac-8f6d-4858-b99b-e089cfac65ee)
+
+#6 Identify patients with the largest balance due on their invoices with a balance exceeding $10,000. Order the balances due in descending order and display the total average balance due. 
+
+    SELECT p.patientID, p.patient_Name, i.InvoiceNum, 
+
+    SUM(i.Balence_Due) AS TotalBalanceDue, 
+
+    (SELECT AVG(Balence_Due) FROM Invoice) AS TotalAverageBalanceDue 
+    
+    FROM patient p
+    
+    JOIN patient_has_Invoice pi ON p.patientID = pi.patient_patientID 
+    
+    JOIN Invoice i ON pi.Invoice_InvoiceNum = i.InvoiceNum 
+    
+    GROUP BY p.patientID, p.patient_Name, i.InvoiceNum 
+    
+    HAVING SUM(i.Balence_Due) > 10000 
+    
+    ORDER BY TotalBalanceDue DESC; 
+
+![10](https://github.com/hubahakhtar/Project1/assets/165077668/e8b18ca6-3ca4-4f25-92bb-67f723a93190)
+
 
 **Generated Data (Mockaroo):**
 https://mockaroo.com/7daabbb0 
