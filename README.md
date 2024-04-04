@@ -7,11 +7,11 @@ Group Members:
 
 Hubah https://github.com/hubahakhtar/Project1
 
-Caroline  https://github.com/carolinetcooper6/Group-Project-1
+Caroline https://github.com/carolinetcooper6/Group-Project-1
 
 Gwen https://github.com/gaw63800/GroupProjectMIST4610-Group1
 
-Charlie
+Charlie https://github.com/charles8888/Project-1
 
 Krishen https://github.com/supersomeone03/Project-1
 
@@ -188,6 +188,17 @@ Pretend you are the owner/operator of an emergency healthcare clinic needing to 
 **Generated Data (Mockaroo):**
 https://mockaroo.com/7daabbb0 
 
-**DB Dictionary:**
-
-
+**Data Dictionary:**
+![a](https://github.com/hubahakhtar/Project1/assets/165077668/7a64e8b4-8c83-4592-a511-4bac269b6c31)
+![b](https://github.com/hubahakhtar/Project1/assets/165077668/1b405496-527a-477e-8618-04d4744fc516)
+![c](https://github.com/hubahakhtar/Project1/assets/165077668/aa4b585e-9538-4532-89a4-5c052cf010a2)
+![d](https://github.com/hubahakhtar/Project1/assets/165077668/1f55c577-944f-4063-89f5-f57b7fa2ead9)
+![e](https://github.com/hubahakhtar/Project1/assets/165077668/cad393a8-ac0a-4c28-b77c-e9e023e06daf)
+![f](https://github.com/hubahakhtar/Project1/assets/165077668/4c01d12e-b669-4fb5-8635-91ae9af622eb)
+![g](https://github.com/hubahakhtar/Project1/assets/165077668/f5076d99-9b9f-4ede-9623-a4a82f12706e)
+![h](https://github.com/hubahakhtar/Project1/assets/165077668/4fe80fbc-3c9b-4cf4-9036-9eaa2c95adcb)
+![i](https://github.com/hubahakhtar/Project1/assets/165077668/21006f80-bea4-4e38-ba85-a2594841a396)
+![j](https://github.com/hubahakhtar/Project1/assets/165077668/1ab2a81b-46ee-4950-be0f-0df01062a41e)
+![k](https://github.com/hubahakhtar/Project1/assets/165077668/9cdb1a06-1d9f-4f9b-b248-6bb0cc35c0f1)
+![l](https://github.com/hubahakhtar/Project1/assets/165077668/a8aebabd-e6fd-4fd7-ba35-3c598d78430c)
+![m](https://github.com/hubahakhtar/Project1/assets/165077668/b8a40c99-630a-49ba-95bd-6d39c489c8bc)
